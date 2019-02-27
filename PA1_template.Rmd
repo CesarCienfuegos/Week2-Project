@@ -1,0 +1,15 @@
+---
+title: "Project"
+author: "Cesar Chavez"
+date: "26 de febrero de 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+dat <- getURL("https://raw.github.com/CesarCienfuegos/Week2-Project/blob/master/activity.csv", header = TRUE)
+data <- read.csv(text = dat)
+```
